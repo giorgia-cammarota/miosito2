@@ -1,0 +1,353 @@
+html, body{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+}
+/*prima row header*/
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px;
+}
+.header{
+    background-color: rgba(24, 97, 24, 0.4);
+    height: 90px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+ul.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+a.nav-link{
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+}
+.nav-link:hover{
+    color: rgba(192, 66, 138, 0.8);
+    border-bottom: solid 4px rgba(192, 66, 138, 0.8);
+}
+/*navigazione su mobile*/
+.mobile-nav-wrapper{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(192, 66, 138, 10);
+    z-index: 1000;
+    display: flex;
+    padding-top: 33%;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+}
+.mobile-nav-wrapper.show{
+    display: flex;
+}
+.mobile-nav-wrapper .nav-list{
+    flex-direction: column;
+    padding-top: 50px;
+}
+.mobile-nav-wrapper .nav-item{
+    margin: 15px 0;
+    width:  100%;
+}
+.mobile-nav-wrapper .nav-link{
+    font-size: 18px;
+    padding: 8px 0;
+}
+.mobile-nav-wrapper .nav-link.selected{
+    color: white;
+    border-bottom: none;
+    cursor: default;
+}
+.mobile-nav-wrapper .nav-link:hover{
+    color: white;
+    border-bottom: none;
+}
+
+/*seconda row introduzione*/
+.intro-section{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.intro-text{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 2; /* Assicura che il testo stia sopra */
+}
+.intro-label{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.intro-title{
+    font-weight: 700;
+    margin: 0;
+}
+.intro-title-1{
+    font-family: 'Fugaz One';
+}
+/*terza row about*/
+.about-section{
+    background-color:rgba(24, 97, 24, 0.4);
+    padding: 60px 0;
+}
+.about-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about-text{
+    color: #000;
+}
+/*quarta row origini*/
+.origini-section{
+    background-color: rgba(24, 97, 24, 0.4);
+    padding: 60px 0;
+}
+.origini-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.origini-text{
+    color: #000;
+}
+/*quinta row intro progetti*/
+.progetti-section{
+    background-color: #fff;
+    padding: 80px 0 40px 0;
+    text-align: center;
+}
+.progetti-tag{
+    display: inline-block;
+    background-color: rgba(192, 66, 138, 0.8);
+    color: white;
+    padding: 8px 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.progetti-title{
+    font-weight: 700;
+    margin: 20px 0;
+}
+.progetti-text{
+    max-width: 700px;
+    margin: 0 auto;
+}    
+/*progetto hubstoria*/
+.hubstoria-section{
+    padding: 0;
+    margin: 40px 0;
+}
+.hubstoria-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/*progetto Iacchetti*/
+.iacchetti-section{
+    padding: 60px 0;
+    background-color: rgba(192, 66, 138, 0.4);
+    margin-left: 0;
+    margin-right: 0;
+}
+.iacchetti-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/*sezione 3 progetti*/
+.sequenza-section {
+    margin: 20px 0;
+    padding: 0;
+    margin-top: 50px;
+}
+.sequenza-1-section {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+}
+.sequenza-1-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0;
+}
+.sequenza-1-text {
+    margin: 0;
+    padding: 0 0px 20px 0px;
+}
+/*ispirazioni*/
+.ispirazioni-section{
+    padding-top: 50px;
+    background-color:rgba(24, 97, 24, 0.4);
+    width: 100%;
+    height: 1040px;
+}
+.ispirazioni-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.ispirazioni-images{
+    display: flex;
+    gap: 20px;
+    padding: 0 40px;
+}
+/*css per il testo sulle immagini*/
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(192, 66, 138, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 40px;
+}
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+.overlay-text {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+/*footer*/
+.logo-footer{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 70px;
+}
+.privacy{
+    padding-top: 20px;
+}
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: rgba(192, 66, 138, 0.4);
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.nav-link-footer{
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+}
+.nav-link-footer:hover{
+    color: rgba(24, 97, 24, 0.8);
+    border-bottom: solid 4px rgba(24, 97, 24, 0.8);
+}
+/*sezione per la dimensione dei font*/
+.font-1{
+    font-size: 75px;
+    line-height: 65px;
+}
+.font-2{
+    font-size: 70px;
+    line-height: 70px;
+}
+.font-3{
+    font-size: 24px;
+    line-height: 30px;
+}
+.font-4{
+    font-size: 18px;
+    line-height: 24px;
+}
+/*sezione per le immagini*/
+.img-1{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.5; /* Opacizza l'immagine al 50% */
+    padding: 30px 0;
+}
+.img-2{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+.img-3{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.img-4{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    padding-right: 0;
+}
+.img-5{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+.img-6{
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    display: block;
+}
+.img-7{
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    display: block;
+}
+.img-8{
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    display: block;
+}
+.img-9{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+.img-10{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+/*per togliere i marigin a destra e a sinistra*/
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}

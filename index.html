@@ -1,15 +1,220 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="it">
 <head>
-    <title>Hello World</title>
-    <style>
-        h1 {
-            color: red;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giorgia Cammarota</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Fugaz+One&family=Manrope:wght@200..800&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is a simple "Hello World" page.</p>
+    <div class="container-fluid">
+        <!--header-->
+        <div class="row header align-items-center g-0">
+            <div class="col-4 col-md-4">
+                <p class="logo">GC</p>
+            </div>
+            <div class="d-none d-lg-flex col-lg-4 font-4">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Origini</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Progetti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Ispirazioni</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--navigazione su mobile-->
+        <div class="mobile-nav-wrapper show d-md-none">
+                <button class="btn btn-close mb-3">Close</button>
+                    <ul class="nav-list">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Origini</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Progetti</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Ispirazioni</a>
+                      </li>
+                 </ul> 
+        </div>
+        <!--introduzione-->
+        <div class="row">
+            <div class="col-12 intro-section">
+                <img src="img/img-1.jpg" alt="immagine introduttiva" class="img-1">
+                <div class="intro-text">
+                    <p class="intro-label">Introduzione</p>
+                    <h1 class="intro-title intro-title-1 font-1">Ciao,</h1>
+                    <h1 class="intro-title font-1">sono Giorgia!</h1>
+                </div>
+            </div>
+        </div>
+        <!--about-->
+        <div class="row about-section align-items-center">
+             <div class="col-12 col-md-6 px-5 justify-content-center">
+                <h3 class="about-title font-3">About</h3>
+                <p class="about-text font-4">
+                    Mi chiamo Giorgia Cammarota, ho vent’anni e sono una studentessa della facoltà di Design
+                    all’università degli Studi di San Marino. Prima di iscrivermi all’università, ho frequentato
+                    il liceo scientifico Marie Curie a Savignano sul Rubicone.<br>
+                    In estate lavoro come gelataia a Rimini, un’esperienza che mi ha insegnato a lavorare in squadra
+                    anche in situazioni di stress e confusione.
+                </p>
+             </div>
+              <div class="col-12 col-md-6 p-0">
+                <img src="img/img-2.jpg" alt="Immagine di Giorgia" class="img-2">
+            </div>
+        </div>
+        <!--Origini-->
+        <div class="row origini-section align-items-center">
+            <div class="col-12 col-md-6 p-0">
+                <img src="img/img-3.jpg" alt="Immagine Poggio Torriana" class="img-3">
+            </div>
+            <div class="col-12 col-md-6 px-5 justify-content-center">
+                <h3 class="origini-title font-3">Le mie origini</h3>
+                <p class="origini-text font-4">
+                    Vivo a Poggio Torriana, un paesino circondato dalla campagna sulle colline riminesi. Sono sempre stata abituata ad essere circondata dal verde, dalle piante ma anche dagli animali. È una piccola cittadina dove tutti si conoscono, sono sempre tutti gentili e amichevoli fra di loro.<br>
+                    Inoltre è presente un anfiteatro all’aria aperta, che si ha una vista molto suggestiva sulla città di Rimini e sul mare Adriatico.
+                </p>
+            </div>
+        </div>
+        <!--Intro progetti-->
+        <div class="row progetti-section">
+            <div class="col-12 text-center">
+                <span class="progetti-tag">Progetti</span>
+                <h2 class="progetti-title font-2">Progetti universitari</h2>
+                <p class="progetti-text font-4">
+                    Qui sotto potrete trovare tutti i miei progetti universitari che ho realizzato sin dall'inizio del mio percorso all'università degli Studi di San Marino.
+                </p>
+            </div>
+        </div>
+        <!--progetto hubstoria-->
+        <div class="row hubstoria-section align-items-center p-0">
+            <div class="col-12 col-md-6">
+                <img src="img/img-4.jpg" alt="immagine progetto Hubstoria" class="img-4">
+            </div>
+            <div class="col-12 col-md-3 ms-md-5">
+                <h2 class="hubstoria-title font-2">Progetto Hubstoria</h2>
+                <p class="hubstoria-text font-4">
+                    Abbiamo realizzato per il corso di Comunicazione un’identità visiva per l’ex teatro riminese Astoria.
+                </p>
+            </div>
+        </div>
+        <!--progetto Iacchetti-->
+        <div class="row iacchetti-section align-items-center">
+            <div class="col-12 col-md-1"></div>
+            <div class="col-12 col-md-4">
+                <h2 class="iacchetti-title font-2">Sedicesimo Giulio Iacchetti</h2>
+                <p class="iacchetti-text font-4">
+                    Tramite il corso di Storia del Design, io e una mia collega abbiamo fatto una ricerca su un famoso designer italiano, Giulio Iacchetti e abbiamo realizzato un sedicesimo che parla della sua vita.
+                </p>
+            </div>
+            <div class="col-12 col-md-1"></div>
+            <div class="col-12 col-md-6 order-1 order-md-2 p-0">
+                <img src="img/img-5.jpg" alt="immagine sedicesimo" class="img-5">
+            </div>
+        </div>
+        <!--sequenza progetti foto-->
+        <div class="row sequenza-section">
+            <div class="col-12 col-md-4">
+                <img src="img/img-6.jpg" alt="immagine pieghevole" class="img-6">
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="img/img-7.jpg" alt="immagine cappello" class="img-7">
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="img/img-8.jpg" alt="immagine modellino geometria" class="img-8">
+            </div>
+        </div>
+        <!--sequenza progetti testo-->
+        <div class="row sequenza-1-section">
+            <div class="col-12 col-md-4">
+                <h2 class="sequenza-1-title font-3">Bollitore 9093</h2>
+                <p class="sequenza-1-text font-4">
+                    Con il corso di Digitale 2D ho realizzato un pieghevole che parla del famoso Bollitore 9093 prodotto da Alessi. 
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2 class="sequenza-1-title font-3">Il cappello del manifestante</h2>
+                <p class="sequenza-1-text font-4">
+                    Per il corso di Prodotto abbiamo realizzato un cappello totalmente in cartone, che abbiamo dedicato a chi manifesta per i propri diritti, realizzandolo a forma di megafono.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2 class="sequenza-1-title font-3">Modellino geometria</h2>
+                <p class="sequenza-1-text font-4">
+                    Ho realizzato un modellino per rappresentare le trasformazioni geometriche, utilizzando delle mezzelune di cartonlegno.
+                </p>
+            </div>
+        </div>
+        <!--ispirazioni-->
+        <div class="row ispirazioni-section">
+            <div class="col-1"></div>
+            <div class="col-12 col-md-11">
+                <h2 class="ispirazioni-title font-2">Le ispirazioni<br> di tutti i giorni</h2>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-12 col-md-5 ispirazioni-images center center">
+                <div class="image-container">
+                    <img src="img/img-9.jpg" alt="immagine quadro" class="img-9">
+                    <div class="image-overlay">
+                        <p class="overlay-text font-4">
+                            Fra le mie ispirazioni quotidiane è sicuramente presente l’arte, in particolare la pittura, che mi lascia tante emozioni.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 ispirazioni-images">
+                <div class="image-container">
+                    <img src="img/img-10.jpg" alt="immagine libro" class="img-10">
+                    <div class="image-overlay">
+                        <p class="overlay-text font-4">
+                             In secondo luogo aggiungerei i libri come mia grandissima fonte di ispirazione, anche i libri mi permettono di vivere molte emozioni e mi ispirano nei progetti che realizzo.
+                        </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <!--footer-->
+        <div class="row footer">
+            <div class="col-1"></div>
+            <div class="col-2 col-md-2">
+                <p class="logo-footer">GC</p>
+                <p class="font-4 privacy">@ 2025<br>Privacy - Cookies</p>
+            </div>
+            <div class="col-1"></div>
+            <div class=" col-6 font-4">
+                <ul class="footer-list">
+                    <li class="nav-item-footer">
+                        <a href="#" class="nav-link-footer">Introduzione</a>
+                    </li>
+                    <li class="nav-item-footer">
+                        <a href="#" class="nav-link-footer">About</a>
+                    </li>
+                    <li class="nav-item-footer">
+                        <a href="#" class="nav-link-footer">Le mie origini</a>
+                    </li>
+                    <li class="nav-item-footer">
+                        <a href="#" class="nav-link-footer">Progetti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
