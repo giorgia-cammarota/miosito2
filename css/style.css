@@ -75,6 +75,31 @@ a.nav-link{
     color: white;
     border-bottom: none;
 }
+/*bottone per chiudere il menu*/
+.btn-menu{
+    background: transparent url('../img/menu.svg') no-repeat center center;
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 0; /* Nasconde il testo del bottone */
+    margin: 0 10px !important;
+}
+/*bottone per chiudere il menu*/
+.btn-close{
+    background: transparent url('../img/close.svg') no-repeat center center;
+    background-size: cover;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 0; /* Nasconde il testo del bottone */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
 /*seconda row introduzione*/
 .intro-section{

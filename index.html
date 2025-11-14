@@ -34,6 +34,10 @@
                 </ul>
             </div>
         </div>
+        <div class="col-6 col-lg-1 d-flex justify-content-end           align-items-center">
+            <button class="btn btn-menu d-block d-lg-none">Menu</button>
+        </div>
+
         <!--navigazione su mobile-->
         <div class="mobile-nav-wrapper show d-md-none">
                 <button class="btn btn-close mb-3">Close</button>
@@ -216,5 +220,28 @@
             </div>
         </div>
     </div>
+     <script>
+       // Seleziona gli elementi
+        const btnMenu = document.querySelector('.btn-menu');
+        const btnClose = document.querySelector('.btn-close');
+        const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
+
+        // Apri/chiudi il menu con il bottone Menu
+        btnMenu.addEventListener('click', function() {
+        mobileNavWrapper.classList.toggle('show');
+        });
+
+        // Chiudi il menu con il bottone Close
+        btnClose.addEventListener('click', function() {
+        mobileNavWrapper.classList.remove('show');
+        });
+
+        // Opzionale: chiudi il menu cliccando fuori
+        document.addEventListener('click', function(e) {
+        if (!btnMenu.contains(e.target) && !mobileNavWrapper.contains(e.target)) {
+        mobileNavWrapper.classList.remove('show');
+        }
+    });
+     </script>
 </body>
 </html>
