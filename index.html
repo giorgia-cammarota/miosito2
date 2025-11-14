@@ -229,11 +229,13 @@
         // Apri/chiudi il menu con il bottone Menu
         btnMenu.addEventListener('click', function() {
         mobileNavWrapper.classList.toggle('show');
+        btnClose.style.display = mobileNavWrapper.classList.contains('show') ? 'block' : 'none';
         });
 
         // Chiudi il menu con il bottone Close
         btnClose.addEventListener('click', function() {
         mobileNavWrapper.classList.remove('show');
+        btnClose.style.display = 'none';
         });
 
         // Opzionale: chiudi il menu cliccando fuori
