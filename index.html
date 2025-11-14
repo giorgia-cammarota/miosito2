@@ -13,51 +13,50 @@
 <body>
     <div class="container-fluid">
         <!--header-->
-        <div class="row header align-items-center g-0">
-            <div class="col-4 col-md-4">
-                <p class="logo">GC</p>
-            </div>
-            <div class="d-none d-lg-flex col-lg-4 font-4">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Origini</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Progetti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Ispirazioni</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="row header align-items-center g-0">
+        <div class="col-8 col-lg-4">
+            <p class="logo">GC</p>
         </div>
-        <div class="col-6 col-lg-1 d-flex justify-content-end align-items-center">
-            <button class="btn btn-menu d-none d-lg-flex">Menu</button>
+        <div class="d-none d-lg-flex col-lg-4 font-4">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#origini" class="nav-link">Origini</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#progetti" class="nav-link">Progetti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ispirazioni" class="nav-link">Ispirazioni</a>
+                </li>
+            </ul>
         </div>
-
+    <div class="col-4 col-lg-4 d-flex justify-content-end align-items-center">
+        <button class="btn btn-menu d-lg-none">Menu</button>
+    </div>
+</div>
         <!--navigazione su mobile-->
         <div class="mobile-nav-wrapper show d-md-none">
                 <button class="btn btn-close mb-3">Close</button>
                     <ul class="nav-list">
                       <li class="nav-item">
-                          <a href="#" class="nav-link">About</a>
+                          <a href="#about" class="nav-link">About</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#" class="nav-link">Origini</a>
+                          <a href="#origini" class="nav-link">Origini</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#" class="nav-link">Progetti</a>
+                          <a href="#progetti" class="nav-link">Progetti</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#" class="nav-link">Ispirazioni</a>
+                          <a href="#ispirazioni" class="nav-link">Ispirazioni</a>
                       </li>
                  </ul> 
         </div>
         <!--introduzione-->
-        <div class="row">
+        <div class="row" id="introduzione">
             <div class="col-12 intro-section">
                 <img src="img/img-1.jpg" alt="immagine introduttiva" class="img-1">
                 <div class="intro-text">
@@ -68,7 +67,7 @@
             </div>
         </div>
         <!--about-->
-        <div class="row about-section align-items-center">
+        <div class="row about-section align-items-center" id="about">
              <div class="col-12 col-md-6 px-5 justify-content-center">
                 <h3 class="about-title font-3">About</h3>
                 <p class="about-text font-4">
@@ -84,7 +83,7 @@
             </div>
         </div>
         <!--Origini-->
-        <div class="row origini-section align-items-center">
+        <div class="row origini-section align-items-center" id="origini">
             <div class="col-12 col-md-6 p-0">
                 <img src="img/img-3.jpg" alt="Immagine Poggio Torriana" class="img-3">
             </div>
@@ -97,7 +96,7 @@
             </div>
         </div>
         <!--Intro progetti-->
-        <div class="row progetti-section">
+        <div class="row progetti-section" id="progetti">
             <div class="col-12 text-center">
                 <span class="progetti-tag">Progetti</span>
                 <h2 class="progetti-title font-2">Progetti universitari</h2>
@@ -166,7 +165,7 @@
             </div>
         </div>
         <!--ispirazioni-->
-        <div class="row ispirazioni-section">
+        <div class="row ispirazioni-section"id="ispirazioni">
             <div class="col-1"></div>
             <div class="col-12 col-md-11">
                 <h2 class="ispirazioni-title font-2">Le ispirazioni<br> di tutti i giorni</h2>
@@ -205,45 +204,53 @@
             <div class=" col-6 font-4">
                 <ul class="footer-list">
                     <li class="nav-item-footer">
-                        <a href="#" class="nav-link-footer">Introduzione</a>
+                        <a href="#introduzione" class="nav-link-footer">Introduzione</a>
                     </li>
                     <li class="nav-item-footer">
-                        <a href="#" class="nav-link-footer">About</a>
+                        <a href="#about" class="nav-link-footer">About</a>
                     </li>
                     <li class="nav-item-footer">
-                        <a href="#" class="nav-link-footer">Le mie origini</a>
+                        <a href="#origini" class="nav-link-footer">Origini</a>
                     </li>
                     <li class="nav-item-footer">
-                        <a href="#" class="nav-link-footer">Progetti</a>
+                        <a href="#progetti" class="nav-link-footer">Progetti</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
      <script>
-       // Seleziona gli elementi
-        const btnMenu = document.querySelector('.btn-menu');
-        const btnClose = document.querySelector('.btn-close');
-        const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
+   // Seleziona gli elementi
+    const btnMenu = document.querySelector('.btn-menu');
+    const btnClose = document.querySelector('.btn-close');
+    const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
 
-        // Apri/chiudi il menu con il bottone Menu
-        btnMenu.addEventListener('click', function() {
-        mobileNavWrapper.classList.toggle('show');
-        btnClose.style.display = mobileNavWrapper.classList.contains('show') ? 'block' : 'none';
-        });
-
-        // Chiudi il menu con il bottone Close
-        btnClose.addEventListener('click', function() {
-        mobileNavWrapper.classList.remove('show');
-        btnClose.style.display = 'none';
-        });
-
-        // Opzionale: chiudi il menu cliccando fuori
-        document.addEventListener('click', function(e) {
-        if (!btnMenu.contains(e.target) && !mobileNavWrapper.contains(e.target)) {
-        mobileNavWrapper.classList.remove('show');
-        }
+    // Apri/chiudi il menu con il bottone Menu
+    btnMenu.addEventListener('click', function() {
+    mobileNavWrapper.classList.toggle('show');
+    btnClose.style.display = mobileNavWrapper.classList.contains('show') ? 'block' : 'none';
     });
-     </script>
+
+    // Chiudi il menu con il bottone Close
+    btnClose.addEventListener('click', function() {
+    mobileNavWrapper.classList.remove('show');
+    btnClose.style.display = 'none';
+    });
+
+    // Opzionale: chiudi il menu cliccando fuori
+    document.addEventListener('click', function(e) {
+    if (!btnMenu.contains(e.target) && !mobileNavWrapper.contains(e.target)) {
+    mobileNavWrapper.classList.remove('show');
+    }
+});
+
+    // Chiudi il menu mobile quando clicchi su un link
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-wrapper .nav-link');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNavWrapper.classList.remove('show');
+        });
+    });
+ </script>
 </body>
 </html>
