@@ -43,7 +43,7 @@ a.nav-link{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(192, 66, 138, 10);
+    background-color: rgba(192, 207, 137);
     z-index: 1000;
     display: flex;
     padding-top: 33%;
@@ -373,5 +373,241 @@ a.nav-link{
 }
 /*animazione del menu'*/
 /* Aggiungi al tuo CSS */ .mobile-nav-wrapper .nav-item { opacity: 0; transform: translateY(-20px); animation: slideIn 0.4s ease forwards; } /* Ritardo progressivo per ogni item */ .mobile-nav-wrapper .nav-item:nth-child(1) { animation-delay: 0.1s; } .mobile-nav-wrapper .nav-item:nth-child(2) { animation-delay: 0.2s; } .mobile-nav-wrapper .nav-item:nth-child(3) { animation-delay: 0.3s; } .mobile-nav-wrapper .nav-item:nth-child(4) { animation-delay: 0.4s; } .mobile-nav-wrapper .nav-item:nth-child(5) { animation-delay: 0.5s; } @keyframes slideIn { to { opacity: 1; transform: translateY(0);} }
-/*media query per il mobile*/
 
+/*media query per il mobile*/
+/*============================================
+  MEDIA QUERIES PER MOBILE
+============================================*/
+
+/* Mobile (max 767px) */
+@media (max-width: 767px) {
+    /* Header mobile */
+    .header {
+        height: 70px;
+        padding: 0 15px;
+    }
+    
+    .logo {
+        font-size: 32px;
+        padding: 15px;
+    }
+    
+    /* Font responsive */
+    .font-1 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+    
+    .font-2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    
+    .font-3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .font-4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    /* Sezione introduzione */
+    /* Sezione introduzione mobile – titolo sopra l’immagine */
+@media (max-width: 767px) {
+    .intro-section {
+        position: relative;
+    }
+
+    .intro-text {
+        position: absolute;
+        top: 50%;
+        left: 60%; /* spostato a destra */
+        transform: translate(-50%, -50%);
+        text-align: left;   /* per migliorare la lettura */
+        background: none;
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+    }
+
+    .img-1 {
+        height: 350px;
+        padding: 0;
+        margin: 0;
+        opacity: 0.55; /* mantieni una leggera opacità per leggibilità */
+    }
+}
+
+    
+    /* Sezioni About e Origini */
+    .about-section,
+    .origini-section {
+        padding: 40px 0;
+    }
+    
+    .about-section .col-12,
+    .origini-section .col-12 {
+        padding: 20px !important;
+    }
+    
+    .img-2,
+    .img-3 {
+        height: 350px;
+        margin: 20px 0;
+    }
+    
+    /* Progetti */
+    .progetti-section {
+        padding: 50px 20px 30px;
+    }
+    
+    .progetti-text {
+        padding: 0 20px;
+    }
+    
+    .hubstoria-section {
+        margin: 20px 0;
+    }
+    
+    .hubstoria-section .col-12 {
+        padding: 20px !important;
+    }
+    
+    .img-4 {
+        height: 350px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    /* Sezione Iacchetti */
+    .iacchetti-section {
+        padding: 40px 20px;
+    }
+    
+    .img-5 {
+        height: 350px;
+        margin-top: 20px;
+    }
+    
+    /* Sequenza progetti */
+.sequenza-section {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.sequenza-section .col-12 {
+    margin-bottom: 30px;
+}
+
+.img-6,
+.img-7,
+.img-8 {
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.sequenza-1-section {
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.sequenza-1-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sequenza-1-text {
+    padding: 0 0 0 0;
+    margin-bottom: 0;
+}
+    
+    /* Ispirazioni */
+    .ispirazioni-section {
+        height: auto;
+        padding: 40px 0 50px;
+    }
+    
+    .ispirazioni-title {
+        padding: 0 20px 30px;
+        text-align: center;
+    }
+    
+    .ispirazioni-images {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    
+    .img-9,
+    .img-10 {
+        height: 400px;
+    }
+    
+    .image-overlay {
+        height: 100%;
+        padding: 20px;
+    }
+    
+    /* Footer mobile */
+    .footer {
+        height: auto;
+        padding: 30px 0;
+    }
+    
+    .logo-footer {
+        font-size: 32px;
+        padding-top: 0;
+    }
+    
+    .privacy {
+        font-size: 14px;
+    }
+    
+    .footer-list {
+        flex-direction: column;
+        padding: 30px 0 0 0;
+        text-align: center;
+    }
+    
+    .nav-item-footer {
+        margin: 8px 0;
+    }
+    
+    .nav-link-footer {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Mobile piccolo (max 480px) */
+@media (max-width: 480px) {
+    .font-1 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+    
+    .font-2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .img-1 {
+        height: 300px;
+    }
+    
+    .intro-text {
+        margin: -80px 15px 0;
+        padding: 25px 15px;
+    }
+    
+    .progetti-tag {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+    
+    .img-9,
+    .img-10 {
+        height: 350px;
+    }
+}
