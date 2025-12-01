@@ -119,6 +119,7 @@ a.nav-link{
     position: relative;
     padding: 0;
     margin: 0;
+    padding-top: 90px; /* per non far sovrapporre l'immagine al header */
 }
 .intro-text{
     position: absolute;
