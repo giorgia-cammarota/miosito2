@@ -13,13 +13,31 @@ html, body{
     padding: 20px;
 }
 .header{
-    background-color: rgba(24, 97, 24, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white; /* sfondo bianco */
     height: 90px;
     margin: 0;
     display: flex;
     align-items: center;
     padding-left: 0;
     padding-right: 0;
+    z-index: 999;
+}
+
+/* E poi aggiungi un overlay verde sopra */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(24, 97, 24, 0.4);
+    z-index: -1;
 }
 ul.nav-list{
     list-style: none;
