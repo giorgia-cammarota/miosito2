@@ -232,8 +232,9 @@ a.nav-link{
 .ispirazioni-section{
     padding-top: 50px;
     background-color:rgba(24, 97, 24, 0.4);
-    width: 100%;
     height: 1040px;
+    width: 100%;
+    margin: 0;
 }
 .ispirazioni-title{
     font-weight: 700;
@@ -287,6 +288,7 @@ a.nav-link{
     width: 100%;
     height: 230px;
     background-color: rgba(192, 66, 138, 0.4);
+    margin: 0;
 }
 .footer-list{
     list-style: none;
