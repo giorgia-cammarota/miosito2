@@ -394,6 +394,24 @@ a.nav-link{
 }
 /*animazione del menu'*/
 /* Aggiungi al tuo CSS */ .mobile-nav-wrapper .nav-item { opacity: 0; transform: translateY(-20px); animation: slideIn 0.4s ease forwards; } /* Ritardo progressivo per ogni item */ .mobile-nav-wrapper .nav-item:nth-child(1) { animation-delay: 0.1s; } .mobile-nav-wrapper .nav-item:nth-child(2) { animation-delay: 0.2s; } .mobile-nav-wrapper .nav-item:nth-child(3) { animation-delay: 0.3s; } .mobile-nav-wrapper .nav-item:nth-child(4) { animation-delay: 0.4s; } .mobile-nav-wrapper .nav-item:nth-child(5) { animation-delay: 0.5s; } @keyframes slideIn { to { opacity: 1; transform: translateY(0);} }
+/* ===================================
+   SMOOTH SCROLL + LOGO ANIMATO
+=================================== */
+
+/* Smooth scroll per tutta la pagina */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Effetto hover per il logo */
+.logo {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: rgba(192, 66, 138, 0.8);
+}
 
 /*media query per il mobile*/
 /*============================================
