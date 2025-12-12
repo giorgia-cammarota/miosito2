@@ -652,3 +652,43 @@ html {
         height: 350px;
     }
 }
+/* SOLUZIONE PIÙ MIRATA - senza spostare i testi */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Container fluid senza padding laterali */
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100%;
+}
+
+/* Rimuovi margini negativi dalle row */
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Mantieni i padding solo per le colonne con testo (quelle con px-5, px-md-5, etc) */
+/* Rimuovi padding SOLO dalle colonne che contengono immagini full-width */
+.intro-section,
+.about-section > .col-12.p-0,
+.origini-section > .col-12.p-0,
+.hubstoria-section > .col-12:first-child,
+.iacchetti-section > .col-12.p-0,
+.ispirazioni-section > .col-12,
+.footer > .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Assicurati che le immagini non escano */
+img {
+    max-width: 100%;
+    display: block;
+}
