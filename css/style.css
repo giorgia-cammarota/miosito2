@@ -424,6 +424,7 @@ html {
     .header {
         height: 70px;
         padding: 0 15px;
+        padding-bottom: 40px;
     }
     
     .logo {
@@ -469,6 +470,7 @@ html {
         padding: 0;
         margin: 0;
         z-index: 10;
+        padding-top: 20px;
     }
 
     .img-1 {
@@ -618,7 +620,7 @@ html {
         padding: 10px;
     }
 }
-
+/* Aggiungi questo CSS nella sezione media query mobile (dopo @media (max-width: 767px)) */ /* Aggiungi questo nella sezione @media (max-width: 767px) */ @media (max-width: 767px) { .intro-text { top: 70%; /* Abbassa la scritta */ } }
 /* Mobile piccolo (max 480px) */
 @media (max-width: 480px) {
     .font-1 {
